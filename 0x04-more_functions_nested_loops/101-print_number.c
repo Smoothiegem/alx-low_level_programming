@@ -24,6 +24,15 @@ void print_number(int n)
 
 	while (number >= 10)
 	{
+		number = number / 10;
+		digit++;
+	}
+	digits = digit + 1;
+	power = 1;
+	i = 1;
+
+	while (i < digits)
+	{
 		power = power * 10;
 		i++;
 	}
